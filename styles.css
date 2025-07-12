@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --green-500: hsl(158, 36%, 37%);
+  --green-700: hsl(158, 42%, 18%);
+  --black: hsl(212, 21%, 14%);
+  --grey: hsl(228, 12%, 48%);
+  --cream: hsl(30, 38%, 92%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  margin: 0;
+  background-color: var(--cream);
+  padding: 80px 13px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+}
+
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  border-radius: 8px;
+  background-color: var(--white);
+}
+
+main img {
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+}
+
+section {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+section .intro {
+  color: var(--grey);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 120%;
+  letter-spacing: 5px;
+}
+
+.title {
+  color: var(--black);
+  font-family: "Fraunces", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 100%;
+}
+
+.description {
+  color: var(--grey);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 160%;
+  letter-spacing: 0;
+}
+
+.price {
+  color: var(--green-500);
+  font-family: "Fraunces", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.price span {
+  color: var(--grey);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 0.8125rem;
+  line-height: 120%;
+  text-decoration: line-through;
+}
+
+button {
+  background-color: var(--green-500);
+  width: 100%;
+  color: var(--white);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 110%;
+  border: none;
+  padding: 17.5px;
+  border-radius: 8px;
+}
+
+button::before {
+  content: url("./images/icon-cart.svg");
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+}
+
+@media (min-width: 48rem) {
+  body {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  main {
+    display: grid;
+    max-width: 37.5rem;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  main img {
+    display: block;
+    border-radius: 8px 0 0 8px;
+  }
+}
+
+.attribution {
+  margin-top: 50px;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
