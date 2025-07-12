@@ -99,6 +99,7 @@ button {
   border: none;
   padding: 17.5px;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 button::before {
